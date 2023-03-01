@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pokimon</title>
+    </head>
+  </head>
+  <body>
+    <h1>Pokemon Data</h1>
+    <% for (const pokemon of pokemonData) { %>
+      <div>
+        <h2><%= pokemon.name %></h2>
+        <ul>
+          <li>Order: <%= pokemon.order %></li>
+          <li>Species: <%= pokemon.species %></li>
+        </ul>
+      </div>
+    <% } %>
+  </body>
+</html>
